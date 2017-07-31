@@ -1,167 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
+/* Variables
+   ============================= */
+/* Global Styles & Layout
+   ============================= */
 .row-centered {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
-
-.twitter:hover {
-  border-color: #1da1f2;
-}
-
-.facebook:hover {
-  border-color: #3b5998;
-}
-
-.instagram:hover {
-  border-color: #e1306c;
-}
-
-.linkedin:hover {
-  border-color: #0077b5;
-}
-
-.github:hover {
-  border-color: #4078c0;
-}
-
-.profile-image-container {
-  align-items: center;
-  border-radius: 50%;
+/* Nav
+   ============================= */
+.main-menu ul {
   display: flex;
-  height: 150px;
-  margin: auto;
-  overflow: hidden;
-  justify-content: center;
-  width: 150px;
-}
+  justify-content: flex-end;
+  list-style: none; }
 
-.profile-image {
-  height: 200px;
-  border-radius: 30px;
-}
+.main-menu li {
+  margin-right: 20px; }
+  .main-menu li:last-of-type {
+    margin-right: 50px; }
 
-.social-media-row ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
+.main-menu a {
+  color: #EEB14F;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
 
-.social-media-row ul li {
-  margin-left: 10px;
-  background-color: transparent;
-  border: 2px solid #EEB14F;
-  border-radius: 50%;
-  color: transparent;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: border-color 0.2s;
-  cursor: pointer;
-}
-
-.social-media-row ul li:hover {
-  transition: border-color 0.2s;
-  color: white;
-}
-
-.social-media-row a {
-  color: white;
-
-}
-
-.social-media-row ul li:hover a {
-  color: white;
-}
-
-.social-media-row ul li:first-of-type {
-  margin-left: 0px;
-}
-
+/* Header
+   ============================= */
 .site-header {
   background-color: #263546;
   color: #EEB14F;
   padding-top: 50px;
   padding-bottom: 50px;
-}
+  text-align: center; }
+  .site-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .site-header h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; }
+  .site-header .profile-image-container {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    justify-content: center;
+    width: 150px; }
+  .site-header .social-media-row ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px; }
+  .site-header .social-media-row li {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid #EEB14F;
+    border-radius: 50%;
+    color: transparent;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.2s;
+    cursor: pointer; }
+    .site-header .social-media-row li:first-of-type {
+      margin-left: 0px; }
+    .site-header .social-media-row li:hover {
+      transition: border-color 0.2s;
+      color: white; }
+      .site-header .social-media-row li:hover a {
+        color: #FFFFFF; }
+  .site-header .social-media-row a {
+    color: #FFFFFF; }
+  .site-header .profile-image {
+    height: 200px;
+    border-radius: 30px; }
+  .site-header .twitter:hover {
+    border-color: #1da1f2; }
+  .site-header .facebook:hover {
+    border-color: #3b5998; }
+  .site-header .instagram:hover {
+    border-color: #e1306c; }
+  .site-header .linkedin:hover {
+    border-color: #0077b5; }
+  .site-header .github:hover {
+    border-color: #4078c0; }
 
-.site-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.site-header h2 {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
+/* Intro Section
+   ============================= */
 .homepage-intro {
   background-color: white;
   color: #263546;
   padding-top: 50px;
-  text-align: left;
-}
-
-.homepage-intro p {
-  line-height: 1.5;
-  font-family: 'Lora', serif;
-}
-
-.homepage-intro a {
-  text-decoration: none;
-  color: #EEB14F;
-  font-weight: 400;
-}
-
-
-.intro-bio h3 {
-  font-family: Montserrat;
-  margin-top: 0px;
-}
-
-.main-menu ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
-
-.main-menu ul li {
-  margin-right: 20px;
-}
-
-.main-menu ul li a {
-  color: #EEB14F;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
+  text-align: left; }
+  .homepage-intro p {
+    line-height: 1.5;
+    font-family: 'Lora', serif; }
+  .homepage-intro a {
+    text-decoration: none;
+    color: #EEB14F;
+    font-weight: 400; }
+  .homepage-intro h3 {
+    font-family: Montserrat;
+    margin-top: 0px; }

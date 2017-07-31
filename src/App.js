@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './App.css';
-import ProfileSection from './components/ProfileSection';
+import Header from './components/Header';
 import IntroSection from './components/IntroSection';
-import Resume from './components/Resume';
 import Home from './components/Home';
+import Nav from './components/Nav';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <ProfileSection />
-        <IntroSection />
-      </div>
+        <div className="App">
+          <div>
+            <Header />
+            <IntroSection />
+          </div>
+        </div>
     );
   }
 }

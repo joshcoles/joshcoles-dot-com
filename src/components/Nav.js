@@ -5,20 +5,17 @@ import {
   Link
 } from 'react-router-dom';
 
-import ProfileSection from './ProfileSection';
-import Resume from './Resume';
+import Header from './Header';
 import Home from './Home';
-
+import App from '../App';
 
 const Nav = () => (
   <Router>
     <div className="main-menu">
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
+        <li><Link to="/"></Link></li>
       </ul>
-      <Route exact path="/" component={Home}/>
-      <Route path="/resume" component={Resume}/>
+      <Route exact path="/" component={App}/>
     </div>
   </Router>
 )

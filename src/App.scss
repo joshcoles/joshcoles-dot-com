@@ -1,0 +1,179 @@
+/* Variables
+   ============================= */
+
+$primary-color: #263546;
+$secondary-color:  #EEB14F;
+$white: #FFFFFF;
+
+$twitter: #1da1f2;
+$facebook: #3b5998;
+$instagram: #e1306c;
+$linkedin: #0077b5;
+$github: #4078c0;
+
+
+/* Global Styles & Layout
+   ============================= */
+   .row-centered {
+      display: flex;
+      justify-content: center;
+    }
+
+/* Nav
+   ============================= */
+
+.main-menu {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  li {
+    margin-right: 20px;
+    &:last-of-type {
+      margin-right: 50px;
+    }
+  }
+  a {
+    color: $secondary-color;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+
+/* Header
+   ============================= */
+
+.site-header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .profile-image-container {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    justify-content: center;
+    width: 150px;
+  }
+
+
+  .social-media-row {
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 0px;
+      padding-left: 0px;
+    }
+    li {
+      margin-left: 10px;
+      background-color: transparent;
+      border: 2px solid $secondary-color;
+      border-radius: 50%;
+      color: transparent;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: border-color 0.2s;
+      cursor: pointer;
+      &:first-of-type {
+        margin-left: 0px;
+      }
+      &:hover {
+        transition: border-color 0.2s;
+        color: white;
+        a {
+          color: $white;
+        }
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+
+  .profile-image {
+    height: 200px;
+    border-radius: 30px;
+  }
+
+
+  .twitter:hover {
+    border-color: $twitter;
+  }
+
+  .facebook:hover {
+    border-color: $facebook;
+  }
+
+  .instagram:hover {
+    border-color: $instagram;
+  }
+
+  .linkedin:hover {
+    border-color: $linkedin;
+  }
+
+  .github:hover {
+    border-color: $github;
+  }
+
+}
+
+/* Intro Section
+   ============================= */
+
+.homepage-intro {
+  background-color: white;
+  color: #263546;
+  padding-top: 50px;
+  text-align: left;
+  p {
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+  }
+  a {
+    text-decoration: none;
+    color: $secondary-color;;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: Montserrat;
+    margin-top: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
