@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SocialRow from './SocialRow';
 import logo from '../profile-picture.jpeg';
-import Nav from './Nav';
-import Home from './Home';
-import App from '../App';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class ProfileSection extends React.Component {
 

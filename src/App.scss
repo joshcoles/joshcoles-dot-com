@@ -3,6 +3,7 @@
 
 $primary-color: #263546;
 $secondary-color:  #EEB14F;
+$secondary-color-dark: #BB7E1C;
 $white: #FFFFFF;
 
 $twitter: #1da1f2;
@@ -63,6 +64,7 @@ $github: #4078c0;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 24px;
   }
 
   .profile-image-container {
@@ -155,9 +157,14 @@ $github: #4078c0;
     font-family: 'Lora', serif;
   }
   a {
-    text-decoration: none;
-    color: $secondary-color;;
+    color: $secondary-color;
     font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+      color: $secondary-color-dark;
+      transition: color 0.2s;
+    }
   }
   h3 {
     font-family: Montserrat;
