@@ -55,7 +55,7 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
-  "homepage": "https://joshcoles.github.io/joshcoles-dot-com/",
+  "homepage": "https://joshcoles.com",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
