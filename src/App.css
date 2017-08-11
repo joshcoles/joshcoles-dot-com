@@ -6,6 +6,14 @@
   display: flex;
   justify-content: center; }
 
+html {
+  background-color: #263546; }
+
+a {
+  transition: color 0.2s; }
+  a:hover {
+    transition: color 0.2s; }
+
 /* Nav
    ============================= */
 .main-menu ul {
@@ -35,7 +43,7 @@
   .site-header h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: capitalize; }
   .site-header h2 {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -46,10 +54,27 @@
     border-radius: 50%;
     display: flex;
     height: 150px;
-    margin: auto;
     overflow: hidden;
     justify-content: center;
-    width: 150px; }
+    width: 150px;
+    margin: auto; }
+  .site-header .intro-section {
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    text-align: left; }
+    .site-header .intro-section > div {
+      background-color: #404F60;
+      padding: 20px; }
+    .site-header .intro-section a {
+      color: #EEB14F;
+      font-size: 18px; }
+      .site-header .intro-section a:hover {
+        color: #BB7E1C;
+        text-decoration: none; }
+    .site-header .intro-section p {
+      font-size: 18px;
+      margin-bottom: 20px; }
   .site-header .social-media-row ul {
     display: flex;
     justify-content: center;
@@ -92,24 +117,50 @@
   .site-header .github:hover {
     border-color: #4078c0; }
 
-/* Intro Section
+/* Blog Post
    ============================= */
-.homepage-intro {
+.homepage-blog {
   background-color: white;
   color: #263546;
   padding-top: 50px;
   text-align: left; }
-  .homepage-intro p {
+  .homepage-blog .blog-content {
+    margin-bottom: 20px; }
+  .homepage-blog .date-posted {
+    font-size: 14px; }
+  .homepage-blog p {
+    font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
     font-family: 'Lora', serif; }
-  .homepage-intro a {
+  .homepage-blog a {
     color: #EEB14F;
     font-weight: 400;
+    font-size: 20px;
     text-decoration: none;
     transition: color 0.2s; }
-    .homepage-intro a:hover {
+    .homepage-blog a:hover {
       color: #BB7E1C;
       transition: color 0.2s; }
-  .homepage-intro h3 {
-    font-family: Montserrat;
-    margin-top: 0px; }
+  .homepage-blog h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 0 0 20px 0; }
+  .homepage-blog li {
+    font-size: 20px;
+    font-family: 'Lora', serif; }
+  .homepage-blog ul {
+    margin-bottom: 20px; }
+
+/* Footer
+   ============================= */
+.site-footer {
+  background-color: #263546;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .site-footer p {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0; }
+  .site-footer .footer-contact-info {
+    text-align: right; }

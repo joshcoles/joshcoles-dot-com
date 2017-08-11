@@ -1,12 +1,12 @@
 import React from 'react';
-import IntroSection from './IntroSection';
+import Blog from './Blog';
 
 
 class Main extends React.Component {
   render() {
     return (
       <div>
-        <IntroSection />
+        <Blog />
       </div>
     );
   }
