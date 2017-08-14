@@ -23,7 +23,7 @@ class ProfileSection extends React.Component {
     return (
       <div className="site-header container-fluid">
         <div className="row row-centered">
-          <div className="profile-section col-xs-12 col-md-5">
+          <div className="profile-section col-sm-offset-1 col-sm-5 col-xs-12">
               <div className="profile-image-container ">
                 <img src="http://i.imgur.com/t8j1n0n.jpg" className="profile-image" alt={this.state.name} />
               </div>
@@ -32,7 +32,7 @@ class ProfileSection extends React.Component {
             <SocialRow urls={this.state.socialMediaInfo} />
             <div id="firebaseui-auth-container"></div>
           </div>
-          <div className="intro-section col-xs-12 col-md-5 ">
+          <div className="intro-section col-sm-5 col-xs-12">
             <div>
               <p>I'm a junior web developer living in Vancouver, BC. In 2016 I graduated from <a target="_blank" rel="noopener noreferrer" href="https://www.lighthouselabs.ca/">Lighthouse Labs</a>.</p>
 

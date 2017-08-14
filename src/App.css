@@ -2,10 +2,6 @@
    ============================= */
 /* Global Styles & Layout
    ============================= */
-.row-centered {
-  display: flex;
-  justify-content: center; }
-
 html {
   background-color: #263546; }
 
@@ -40,6 +36,8 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center; }
+  .site-header > .row {
+    display: block; }
   .site-header h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -126,8 +124,11 @@ a {
   text-align: left; }
   .homepage-blog .blog-content {
     margin-bottom: 20px; }
+  .homepage-blog .blog-centered {
+    display: flex;
+    justify-content: center; }
   .homepage-blog .date-posted {
-    font-size: 14px; }
+    font-size: 16px; }
   .homepage-blog p {
     font-size: 20px;
     line-height: 1.5;
@@ -164,3 +165,10 @@ a {
     margin-bottom: 0; }
   .site-footer .footer-contact-info {
     text-align: right; }
+
+/* Bootstrap default query sizes */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 768px) {
+  .profile-section {
+    margin-bottom: 50px; } }
