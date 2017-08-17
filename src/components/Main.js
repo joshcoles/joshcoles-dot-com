@@ -1,7 +1,6 @@
 import React from 'react';
 import Blog from './Blog';
 
-
 class Main extends React.Component {
   render() {
     return (
@@ -11,6 +10,5 @@ class Main extends React.Component {
     );
   }
 }
-
 
 export default Main;

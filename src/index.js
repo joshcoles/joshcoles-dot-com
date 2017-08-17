@@ -5,6 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import * as firebase from 'firebase';
 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
@@ -19,9 +20,5 @@ registerServiceWorker();
     messagingSenderId: "971981900666"
   };
   firebase.initializeApp(config);
-
-
-
-
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import SocialRow from './SocialRow';
-
+import Main from './Main';
+import Routes from './Routes';
 
 class ProfileSection extends React.Component {
 
@@ -22,6 +23,7 @@ class ProfileSection extends React.Component {
   render() {
     return (
       <div className="site-header container-fluid">
+        <Routes />
         <div className="row row-centered">
           <div className="profile-section col-sm-offset-1 col-sm-5 col-xs-12">
               <div className="profile-image-container ">
