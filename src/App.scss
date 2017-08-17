@@ -33,10 +33,15 @@ $github: #4078c0;
    ============================= */
 
 .main-menu {
+  margin-top: 20px;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 2;
   ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     list-style: none;
+    padding-left: 0px;
   }
   li {
     margin-right: 20px;
@@ -49,6 +54,12 @@ $github: #4078c0;
     font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    &:hover {
+      color: $secondary-color-dark;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
   }
 }
 
@@ -59,7 +70,7 @@ $github: #4078c0;
 .site-header {
   background-color: $primary-color;
   color: $secondary-color;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 50px;
   text-align: center;
   > .row {
@@ -255,9 +266,110 @@ $github: #4078c0;
   .profile-section {
     margin-bottom: 50px;
   }
+  .main-menu {
+    width: 100%;
+    ul {
+      // width: 100%;
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .project-outer {
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
  }
 
 
+/* Projects Page
+   ============================= */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.project-outer {
+  margin-top: 30px;
+  a {
+    .project-inner {
+      height: 100%;
+      transition: all 0.2s;
+      padding: 20px;
+      .tech-stack {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        li {
+          margin: 2px;
+          padding: 5px 10px;
+        }
+      }
+    }
+    h2 {
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+      width: 0px;
+      transition: 0.5s ease;
+      white-space: nowrap;
+      padding-bottom: 5px;
+    }
+    &:hover {
+      text-decoration: none;
+      h2 {
+        border-bottom: 3px solid $primary-color;
+        width: 100%;
+      }
+      .project-inner {
+        box-shadow: 0 21px 43px rgba(0, 0, 0, 0.15);
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  &:nth-of-type(even) {
+    a {
+      .project-inner {
+        background-color: $primary-color;
+        color: $white;
+      }
+      h2 {
+        border-bottom: 3px solid $white;
+      }
+      .tech-stack {
+        li {
+          border: 1px solid $white;
+        }
+      }
+    }
+  }
+  &:nth-of-type(odd) {
+    a {
+      .project-inner {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+      .tech-stack {
+        li {
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+}
 
 
 

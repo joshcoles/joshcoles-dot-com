@@ -12,28 +12,36 @@ a {
 
 /* Nav
    ============================= */
-.main-menu ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none; }
-
-.main-menu li {
-  margin-right: 20px; }
-  .main-menu li:last-of-type {
-    margin-right: 50px; }
-
-.main-menu a {
-  color: #EEB14F;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
+.main-menu {
+  margin-top: 20px;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 2; }
+  .main-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 0px; }
+  .main-menu li {
+    margin-right: 20px; }
+    .main-menu li:last-of-type {
+      margin-right: 50px; }
+  .main-menu a {
+    color: #EEB14F;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+    .main-menu a:hover {
+      color: #BB7E1C;
+      text-decoration: none;
+      transition: all 0.2s; }
 
 /* Header
    ============================= */
 .site-header {
   background-color: #263546;
   color: #EEB14F;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 50px;
   text-align: center; }
   .site-header > .row {
@@ -171,4 +179,66 @@ a {
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 768px) {
   .profile-section {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .main-menu {
+    width: 100%; }
+    .main-menu ul {
+      display: flex;
+      justify-content: center; }
+      .main-menu ul li {
+        margin-right: 20px; }
+        .main-menu ul li:last-of-type {
+          margin-right: 0px; }
+  .project-outer h2 {
+    font-size: 24px; }
+  .project-outer h3 {
+    font-size: 20px; } }
+
+/* Projects Page
+   ============================= */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px; }
+
+.project-outer {
+  margin-top: 30px; }
+  .project-outer a .project-inner {
+    height: 100%;
+    transition: all 0.2s;
+    padding: 20px; }
+    .project-outer a .project-inner .tech-stack {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0px; }
+      .project-outer a .project-inner .tech-stack li {
+        margin: 2px;
+        padding: 5px 10px; }
+  .project-outer a h2 {
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    padding-bottom: 5px; }
+  .project-outer a:hover {
+    text-decoration: none; }
+    .project-outer a:hover h2 {
+      border-bottom: 3px solid #263546;
+      width: 100%; }
+    .project-outer a:hover .project-inner {
+      box-shadow: 0 21px 43px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s; }
+  .project-outer:nth-of-type(even) a .project-inner {
+    background-color: #263546;
+    color: #FFFFFF; }
+  .project-outer:nth-of-type(even) a h2 {
+    border-bottom: 3px solid #FFFFFF; }
+  .project-outer:nth-of-type(even) a .tech-stack li {
+    border: 1px solid #FFFFFF; }
+  .project-outer:nth-of-type(odd) a .project-inner {
+    background-color: #EEB14F;
+    color: #263546; }
+  .project-outer:nth-of-type(odd) a .tech-stack li {
+    border: 1px solid #263546; }
