@@ -14,6 +14,14 @@ class Projects extends React.Component {
     // in the array is a new paragraph.
     projects: [
         {
+         name: "Vancouver Ipsum",
+         url: "http://vancouveripsum.com",
+         description: [
+          "This a very simple ipsum generator that I built in Angular 4. I started very simple, but hope to add more features as I develop my skills through a course that I'm taking."
+          ],
+         stack: ["Angular 4", "CSS", "Firebase", "Bootstrap" ]
+       },
+        {
          name: "joshcoles.com",
          url: "http://joshcoles.com",
          description: [
