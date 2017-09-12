@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Projects from './components/Projects';
-// import Routes from './components/Routes';
+import SinglePage from './components/home/SinglePage';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,7 +18,7 @@ class App extends React.Component {
         <div className="App">
             <Router>
               <div>
-                <nav className="main-menu col-sm-12 col-sm-offset-1">
+                <nav className="main-menu col-sm-12">
                   <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
@@ -27,6 +27,7 @@ class App extends React.Component {
                 <Header />
                   <Route path="/projects" component={Projects}/>
                   <Route exact path="/" component={Main}/>
+                  <Route path="/SinglePage" component={SinglePage}/>
                 <Footer />
               </div>
             </Router>

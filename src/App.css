@@ -242,3 +242,11 @@ a {
     color: #263546; }
   .project-outer:nth-of-type(odd) a .tech-stack li {
     border: 1px solid #263546; }
+
+/* Single Page
+   ============================= */
+.banner-background {
+  background-image: url("./images/yung_josh.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
