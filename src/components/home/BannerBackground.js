@@ -6,9 +6,9 @@ class BannerBackground extends React.Component {
     return (
         <div className="banner-background container-fluid">
             <div className="row">
-              <div className="col-sm-12">
-              <h1>Josh Coles</h1>
-              <p>Junior Web Developer</p>
+              <div className="col-xs-12">
+                <h1>Josh Coles</h1>
+                <p>Look at this website. Look at how nice it looks.</p>
               </div>
             </div>
         </div>

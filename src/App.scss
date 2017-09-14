@@ -1,3 +1,5 @@
+@import 'SinglePage';
+
 /* Variables
    ============================= */
 
@@ -370,21 +372,6 @@ $github: #4078c0;
     }
   }
 }
-
-
-/* Single Page
-   ============================= */
-
-// Banner Background
-
-.banner-background {
-  background-image: url('./images/yung_josh.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
 
 
 

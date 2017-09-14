@@ -1,3 +1,22 @@
+.banner-background.container-fluid {
+  background-image: url("./images/lake.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 600px;
+  position: relative; }
+
+.services {
+  display: flex;
+  justify-content: space-around; }
+
+.about {
+  display: flex; }
+  .about .about-image {
+    background-image: url("./images/yung_josh.JPG");
+    min-height: 400px;
+    background-size: cover; }
+
 /* Variables
    ============================= */
 /* Global Styles & Layout
@@ -242,11 +261,3 @@ a {
     color: #263546; }
   .project-outer:nth-of-type(odd) a .tech-stack li {
     border: 1px solid #263546; }
-
-/* Single Page
-   ============================= */
-.banner-background {
-  background-image: url("./images/yung_josh.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }

@@ -1,0 +1,22 @@
+.banner-background.container-fluid {
+  background-image: url('./images/lake.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 600px;
+  position: relative;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  display: flex;
+  .about-image {
+    background-image: url('./images/yung_josh.JPG');
+    min-height: 400px;
+    background-size: cover;
+  }
+}
