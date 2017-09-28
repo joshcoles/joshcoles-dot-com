@@ -261,3 +261,83 @@ a {
     color: #263546; }
   .project-outer:nth-of-type(odd) a .tech-stack li {
     border: 1px solid #263546; }
+
+/* Single Page
+   ============================= */
+.banner-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .banner-background .banner-content {
+    padding-bottom: 50px; }
+  .banner-background .banner-title {
+    color: #EEB14F;
+    font-family: Montserrat, sans-serif;
+    font-size: 70px; }
+  .banner-background .banner-description {
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px; }
+
+.description {
+  background-color: #263546;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 70px; }
+  .description .description-content {
+    color: #FFFFFF;
+    font-weight: 200; }
+  .description .emphasized {
+    color: #EEB14F;
+    font-family: Montserrat, sans-serif; }
+
+.services {
+  background-color: #404F60;
+  padding-bottom: 50px; }
+  .services .service {
+    align-items: center;
+    background-color: #404F60;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin-top: -75px;
+    padding: 0 20px;
+    text-align: center;
+    width: 300px; }
+  .services .service-name {
+    color: #EEB14F;
+    margin-bottom: 20px;
+    position: relative; }
+    .services .service-name:after {
+      color: #EEB14F;
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 2px;
+      z-index: 2;
+      background-color: #eeb14f;
+      bottom: -10px;
+      left: calc(50% - 10px); }
+  .services .service-description {
+    color: #FFFFFF; }
+  .services i:before {
+    color: #FFFFFF;
+    font-size: 100px; }
+
+.about {
+  padding: 0px; }
+  .about .about-description {
+    background-color: #EEB14F;
+    padding: 70px; }
+  .about .about-heading {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: Montserrat, sans-serif; }
+  .about .about-content {
+    font-family: Montserrat;
+    color: #263546;
+    font-size: 15px; }

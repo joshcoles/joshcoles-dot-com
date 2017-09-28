@@ -6,8 +6,8 @@ class Description extends React.Component {
     return (
         <div className="description container-fluid">
             <div className="row">
-              <div className="col-xs-12">
-              <h3>I'm a junior developer with experience building responsive, eye-catching websites.</h3>
+              <div className="col-xs-8 col-xs-offset-2">
+                <h3 className="description-content">I'm a junior developer with experience building <span className="emphasized">responsive</span>, <span className="emphasized">eye-catching</span> websites.</h3>
               </div>
             </div>
         </div>
