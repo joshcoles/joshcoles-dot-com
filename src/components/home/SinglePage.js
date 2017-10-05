@@ -4,7 +4,6 @@ import Description from './Description';
 import Services from './Services';
 import About from './About';
 import Projects from '../Projects';
-import Instagram from './Instagram';
 import Contact from './Contact';
 
 class SinglePage extends React.Component {
@@ -16,7 +15,6 @@ class SinglePage extends React.Component {
           <Description />
           <Services />
           <About />
-          <Instagram />
           <Projects />
           <Contact />
         </div>

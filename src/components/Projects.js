@@ -89,6 +89,7 @@ class Projects extends React.Component {
   render() {
     return (
       <section className="project-section container-fluid">
+        <h2 className="project-heading">Some stuff I've built or worked on</h2>
         <div className="row projects-list">
         {this.state.projects.map((project, index) => {
           return (

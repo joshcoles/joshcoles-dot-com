@@ -35,15 +35,23 @@ $github: #4078c0;
       border-width: 3px;
       border-style: solid;
       border-radius: 5px;
+      cursor: pointer;
       padding: 10px 20px;
       font-family: Montserrat;
       font-size: 30px;
+      text-decoration: none;
 
       &.primary-button {
         border: 3px solid $primary-color;
         background-color: $primary-color;
         color: $white;
         border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.2s;
+        &:hover {
+          border: 3px solid $white;
+          transition: all 0.2s;
+        }
       }
     }
 
@@ -273,43 +281,6 @@ $github: #4078c0;
   }
 }
 
-
-
-/* Bootstrap default query sizes */
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-
-@media (max-width: 768px) {
-  .profile-section {
-    margin-bottom: 50px;
-  }
-  .main-menu {
-    width: 100%;
-    ul {
-      // width: 100%;
-      display: flex;
-      justify-content: center;
-      li {
-        margin-right: 20px;
-        &:last-of-type {
-          margin-right: 0px;
-        }
-      }
-    }
-  }
-
-  .project-outer {
-    h2 {
-      font-size: 24px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-  }
- }
-
-
 /* Projects Page
    ============================= */
 
@@ -317,6 +288,17 @@ $github: #4078c0;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+
+.project-section {
+  padding-top: 40px;
+}
+
+.project-heading {
+  text-align: center;
+  font-family: Montserrat;
+  color: $primary-color;
+  font-size: 36px;
 }
 
 .project-outer {
@@ -399,6 +381,7 @@ $github: #4078c0;
     justify-content: flex-end;
     .banner-content {
       padding-bottom: 50px;
+      text-align: right;
     }
   .banner-title {
     color: $secondary-color;
@@ -422,6 +405,7 @@ $github: #4078c0;
   .description-content {
     color: $white;
     font-weight: 200;
+    text-align: center;
   }
   .emphasized {
     color: $secondary-color;
@@ -514,10 +498,39 @@ $github: #4078c0;
   }
 }
 
+/* Bootstrap default query sizes */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
 
+@media (max-width: 768px) {
+  .profile-section {
+    margin-bottom: 50px;
+  }
+  .main-menu {
+    width: 100%;
+    ul {
+      // width: 100%;
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
 
-
+  .project-outer {
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+ }
 
 
 
