@@ -299,6 +299,10 @@ $github: #4078c0;
   font-family: Montserrat;
   color: $primary-color;
   font-size: 36px;
+  margin-bottom: 30px;
+  @media(max-width: 767px){
+      text-align: center;
+    }
 }
 
 .project-outer {
@@ -379,6 +383,7 @@ $github: #4078c0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
     .banner-content {
       padding-bottom: 50px;
       text-align: right;
@@ -393,6 +398,65 @@ $github: #4078c0;
     font-family: Montserrat, sans-serif;
     font-size: 20px;
   }
+  .social-media-row {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin-bottom: 0px;
+      padding-left: 0px;
+    }
+    li {
+      margin-left: 10px;
+      background-color: transparent;
+      border: 2px solid $secondary-color;
+      border-radius: 50%;
+      color: transparent;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: border-color 0.2s;
+      cursor: pointer;
+      &:first-of-type {
+        margin-left: 0px;
+      }
+      &:hover {
+        transition: border-color 0.2s;
+        color: white;
+        a {
+          color: $white;
+        }
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+
+  .twitter:hover {
+    border-color: $twitter;
+  }
+
+  .facebook:hover {
+    border-color: $facebook;
+  }
+
+  .instagram:hover {
+    border-color: $instagram;
+  }
+
+  .linkedin:hover {
+    border-color: $linkedin;
+  }
+
+  .github:hover {
+    border-color: $github;
+  }
 }
 
 .description {
@@ -402,6 +466,10 @@ $github: #4078c0;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 70px;
+  @media (max-width:1199px){
+    min-height: 250px;
+    padding-bottom: 30px;
+  }
   .description-content {
     color: $white;
     font-weight: 200;
@@ -416,6 +484,9 @@ $github: #4078c0;
 .services {
   background-color: $primary-color-light;
   padding-bottom: 50px;
+  @media (max-width:1199px){
+    flex-wrap: wrap;
+  }
   .service {
     align-items: center;
     background-color: $primary-color-light;
@@ -428,6 +499,14 @@ $github: #4078c0;
     padding: 0 20px;
     text-align: center;
     width: 300px;
+    @media (max-width: 1199px){
+      margin-top: 50px;
+      width: 50%;
+    }
+    @media (max-width: 599px){
+      margin-top: 20px;
+      width: 100%;
+    }
   }
   .service-name {
     color: $secondary-color;
@@ -458,9 +537,19 @@ $github: #4078c0;
 
 .about {
   padding: 0px;
+  @media(max-width: 767px){
+    flex-direction: column;
+  }
   .about-description {
     background-color: $secondary-color;
     padding: 70px;
+    @media(max-width: 767px){
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  .about-image {
+    background-position: center;
   }
   .about-heading {
     color: $white;
@@ -471,6 +560,13 @@ $github: #4078c0;
     font-family: Montserrat;
     color: $primary-color;
     font-size: 15px;
+    a {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 }
 
@@ -482,6 +578,7 @@ $github: #4078c0;
   justify-content: center;
   min-height: 300px;
   text-align: center;
+  padding-bottom: 30px;
   .row {
     width: 100%;
   }

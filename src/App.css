@@ -227,7 +227,11 @@ a {
   text-align: center;
   font-family: Montserrat;
   color: #263546;
-  font-size: 36px; }
+  font-size: 36px;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .project-heading {
+      text-align: center; } }
 
 .project-outer {
   margin-top: 30px; }
@@ -276,7 +280,8 @@ a {
 .banner-background {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  position: relative; }
   .banner-background .banner-content {
     padding-bottom: 50px;
     text-align: right; }
@@ -288,6 +293,48 @@ a {
     color: #FFFFFF;
     font-family: Montserrat, sans-serif;
     font-size: 20px; }
+  .banner-background .social-media-row {
+    position: absolute;
+    right: 30px;
+    top: 30px; }
+    .banner-background .social-media-row ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin-bottom: 0px;
+      padding-left: 0px; }
+    .banner-background .social-media-row li {
+      margin-left: 10px;
+      background-color: transparent;
+      border: 2px solid #EEB14F;
+      border-radius: 50%;
+      color: transparent;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: border-color 0.2s;
+      cursor: pointer; }
+      .banner-background .social-media-row li:first-of-type {
+        margin-left: 0px; }
+      .banner-background .social-media-row li:hover {
+        transition: border-color 0.2s;
+        color: white; }
+        .banner-background .social-media-row li:hover a {
+          color: #FFFFFF; }
+    .banner-background .social-media-row a {
+      color: #FFFFFF; }
+  .banner-background .twitter:hover {
+    border-color: #1da1f2; }
+  .banner-background .facebook:hover {
+    border-color: #3b5998; }
+  .banner-background .instagram:hover {
+    border-color: #e1306c; }
+  .banner-background .linkedin:hover {
+    border-color: #0077b5; }
+  .banner-background .github:hover {
+    border-color: #4078c0; }
 
 .description {
   background-color: #263546;
@@ -296,6 +343,10 @@ a {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 70px; }
+  @media (max-width: 1199px) {
+    .description {
+      min-height: 250px;
+      padding-bottom: 30px; } }
   .description .description-content {
     color: #FFFFFF;
     font-weight: 200;
@@ -307,6 +358,9 @@ a {
 .services {
   background-color: #404F60;
   padding-bottom: 50px; }
+  @media (max-width: 1199px) {
+    .services {
+      flex-wrap: wrap; } }
   .services .service {
     align-items: center;
     background-color: #404F60;
@@ -319,6 +373,14 @@ a {
     padding: 0 20px;
     text-align: center;
     width: 300px; }
+    @media (max-width: 1199px) {
+      .services .service {
+        margin-top: 50px;
+        width: 50%; } }
+    @media (max-width: 599px) {
+      .services .service {
+        margin-top: 20px;
+        width: 100%; } }
   .services .service-name {
     color: #EEB14F;
     margin-bottom: 20px;
@@ -341,9 +403,18 @@ a {
 
 .about {
   padding: 0px; }
+  @media (max-width: 767px) {
+    .about {
+      flex-direction: column; } }
   .about .about-description {
     background-color: #EEB14F;
     padding: 70px; }
+    @media (max-width: 767px) {
+      .about .about-description {
+        padding: 20px;
+        text-align: center; } }
+  .about .about-image {
+    background-position: center; }
   .about .about-heading {
     color: #FFFFFF;
     font-size: 40px;
@@ -352,6 +423,11 @@ a {
     font-family: Montserrat;
     color: #263546;
     font-size: 15px; }
+    .about .about-content a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      .about .about-content a:hover {
+        color: #263546; }
 
 .contact {
   align-items: center;
@@ -360,7 +436,8 @@ a {
   flex-direction: column;
   justify-content: center;
   min-height: 300px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 30px; }
   .contact .row {
     width: 100%; }
   .contact h2 {
