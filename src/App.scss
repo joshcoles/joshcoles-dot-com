@@ -387,6 +387,9 @@ $github: #4078c0;
     .banner-content {
       padding-bottom: 50px;
       text-align: right;
+      @media(max-width: 768px){
+        text-align: center;
+      }
     }
   .banner-title {
     color: $secondary-color;
@@ -542,10 +545,16 @@ $github: #4078c0;
   }
   .about-description {
     background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 70px;
     @media(max-width: 767px){
       padding: 20px;
       text-align: center;
+    }
+    @media(max-width: 992px){
+      padding: 40px;
     }
   }
   .about-image {

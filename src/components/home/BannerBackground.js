@@ -21,7 +21,7 @@ class BannerBackground extends React.Component {
   render() {
     return (
         <div className="banner-background container-fluid">
-          <SocialRow urls={this.state.socialMediaInfo} />
+            <SocialRow urls={this.state.socialMediaInfo} />
             <div className="row">
               <div className="col-md-11 col-xs-12 banner-content">
                 <h1 className="banner-title">Josh Coles</h1>

@@ -4,6 +4,7 @@ class SocialRow extends React.Component {
 
   render() {
     return (
+      <div className="row">
         <div className="social-media-row">
             <ul>
               <li className="twitter"><a rel="noopener noreferrer" target="_blank" href={this.props.urls.twitter}><i className="fa fa-twitter" aria-hidden="true" title="Josh Coles on Twitter."></i></a></li>
@@ -13,6 +14,7 @@ class SocialRow extends React.Component {
               <li className="github"><a rel="noopener noreferrer" target="_blank" href={this.props.urls.github}><i className="fa fa-github" aria-hidden="true"></i></a></li>
             </ul>
           </div>
+        </div>
     );
   }
 }

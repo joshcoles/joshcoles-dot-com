@@ -5,6 +5,9 @@
   background-position: center;
   min-height: 600px;
   position: relative;
+  @media(max-width: 768px){
+    min-height: 400px;
+  }
 }
 
 .services {

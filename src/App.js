@@ -15,24 +15,13 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="App">
-            <Router>
-              <div>
-                <nav className="main-menu col-sm-12">
-                  <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                  </ul>
-                </nav>
-                <Header />
-                  <Route path="/projects" component={Projects}/>
-                  <Route exact path="/" component={Main}/>
-                  <Route path="/SinglePage" component={SinglePage}/>
-                <Footer />
-              </div>
-            </Router>
-        </div>
-
+      <div className="App">
+        <Router>
+          <div>
+            <Route exact path="/" component={SinglePage}/>
+          </div>
+        </Router>
+      </div>
     );
   }
 }
