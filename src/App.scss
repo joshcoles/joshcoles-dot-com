@@ -291,6 +291,7 @@ $github: #4078c0;
 }
 
 .project-section {
+  padding-bottom: 20px;
   padding-top: 40px;
 }
 
@@ -439,6 +440,20 @@ $github: #4078c0;
     a {
       color: $white;
     }
+    @media(max-width: 768px){
+      position: absolute;
+      right: auto;
+      width: 300px;
+      left: calc(50% - 150px);
+      li {
+        border-width: 3px;
+        height: 50px;
+        width: 50px;
+      }
+      i {
+        font-size: 26px;
+      }
+    }
   }
 
   .twitter:hover {
@@ -499,7 +514,7 @@ $github: #4078c0;
     justify-content: center;
     height: 300px;
     margin-top: -75px;
-    padding: 0 20px;
+    padding: 20px 20px 0 20px;
     text-align: center;
     width: 300px;
     @media (max-width: 1199px){
@@ -507,7 +522,7 @@ $github: #4078c0;
       width: 50%;
     }
     @media (max-width: 599px){
-      margin-top: 20px;
+      margin-top: 0;
       width: 100%;
     }
   }
@@ -529,12 +544,10 @@ $github: #4078c0;
   }
   .service-description {
     color: $white;
+    font-size: 16px;
   }
-  i {
-    &:before {
-      color: $white;
-      font-size: 100px;
-    }
+  img {
+    filter: brightness(0) invert(1);
   }
 }
 

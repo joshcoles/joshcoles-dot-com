@@ -14,6 +14,14 @@ class Projects extends React.Component {
     // in the array is a new paragraph.
     projects: [
         {
+         name: "Namaste.tv",
+         url: "http://namaste.tv",
+         description: [
+          "At my current job I maintain this site, which was built as a custom shopify theme. My work includes bug and style fixes, managing the shopify store, and creating custom product pages for new programs that we create."
+          ],
+         stack: ["Shopify", "Liquid", "SCSS", "jQuery" ]
+       },
+        {
          name: "Vancouver Ipsum",
          url: "http://vancouveripsum.com",
          description: [
