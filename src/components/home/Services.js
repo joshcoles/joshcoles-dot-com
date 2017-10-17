@@ -17,7 +17,7 @@ class Services extends React.Component {
           </div>
           <div className="service">
           <img src="cms_icon.png" title="CMS by Danil Polshin from the Noun Project" width="100" height="100"/>
-            <h2 className="service-name">Service Name</h2>
+            <h2 className="service-name">CMS</h2>
             <p className="service-description">90% of the web uses Wordpress (I made that number up). Wordpress and Shopify.</p>
           </div>
           <div className="service">
