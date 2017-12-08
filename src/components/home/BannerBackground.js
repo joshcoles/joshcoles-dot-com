@@ -25,7 +25,7 @@ class BannerBackground extends React.Component {
             <div className="row">
               <div className="col-md-11 col-xs-12 banner-content">
                 <h1 className="banner-title">Josh Coles</h1>
-                <p className="banner-description">Look at this website. Look at how nice it looks.</p>
+                <p className="banner-description">Full-Stack Web Developer.</p>
               </div>
             </div>
         </div>

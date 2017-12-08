@@ -17,7 +17,7 @@ class Projects extends React.Component {
          name: "Namaste.tv",
          url: "http://namaste.tv",
          description: [
-          "At my current job I maintain this site, which was built as a custom shopify theme. My work includes bug and style fixes, managing the shopify store, and creating custom product pages for new programs that we create."
+          "At this job I maintained namaste.tv, which was built on Shopify as a custom theme. My work included bug and style fixes, managing the shopify store, and creating custom product pages for new programs that we create."
           ],
          stack: ["Shopify", "Liquid", "SCSS", "jQuery" ]
        },
@@ -96,7 +96,7 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <section className="project-section container-fluid">
+      <section className="project-section container">
         <h2 className="project-heading">Some stuff I've built or worked on</h2>
         <div className="row projects-list">
         {this.state.projects.map((project, index) => {

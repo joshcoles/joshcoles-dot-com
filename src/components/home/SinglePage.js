@@ -5,6 +5,7 @@ import Services from './Services';
 import About from './About';
 import Projects from '../Projects';
 import Contact from './Contact';
+import lake from '../../images/lake.jpeg';
 
 class SinglePage extends React.Component {
 
