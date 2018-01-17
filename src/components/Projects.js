@@ -14,13 +14,14 @@ class Projects extends React.Component {
     // in the array is a new paragraph.
     projects: [
         {
-         name: "Namaste.tv",
-         url: "http://namaste.tv",
-         description: [
-          "At this job I maintained namaste.tv, which was built on Shopify as a custom theme. My work included bug and style fixes, managing the shopify store, and creating custom product pages for new programs that we create."
+          name: "joshcoles.com",
+          url: "http://joshcoles.com",
+          description: [
+            "Very meta - you're here right now. This is my own, personal web playground where I can get some experience building in React.js. It's also, conveniently, a place to show off some of my other work.",
+            "Note that I kind of just started this one day without much planning ahead, which I know is bad practice. My goal is to continue to refactor this in my spare time and continue to improve it as I add features."
           ],
-         stack: ["Shopify", "Liquid", "SCSS", "jQuery" ]
-       },
+          stack: ["React.js", "Node.js", "Firebase", "Bootstrap", "HTML", "SASS", "Create React App"]
+        },
         {
          name: "Vancouver Ipsum",
          url: "http://vancouveripsum.com",
@@ -29,20 +30,11 @@ class Projects extends React.Component {
           ],
          stack: ["Angular 4", "CSS", "Firebase", "Bootstrap" ]
        },
-        {
-         name: "joshcoles.com",
-         url: "http://joshcoles.com",
-         description: [
-          "Very meta - you're here right now. This is my own, personal web playground where I can get some experience building in React.js. It's also, conveniently, a place to show off some of my other work.",
-          "Note that I kind of just started this one day without much planning ahead, which I know is bad practice. My goal is to continue to refactor this in my spare time and continue to improve it as I add features."
-          ],
-         stack: ["React.js", "Node.js", "Firebase", "Bootstrap", "HTML", "SASS", "Create React App" ]
-       },
        {
          name: "masterexteriors.ca",
          url: "https://github.com/joshcoles/master-exteriors",
          description: [
-         "I'm in the process of building this site for my father's business, 'Master Exteriors'. I'm planning on deploying it in September after I get some photos of his work while I'm home in PEI this summer.",
+         "I'm in the process of building this site for my father's business, 'Master Exteriors'.",
          "This is a static site built with an Express.js server and styled with SASS. I hope that it can bring in a bit more local business for him, so I'm going to put some work into SEO before it launches."
          ],
          stack: ["Node.js", "Express.js", "SASS", "jQuery"]
@@ -64,6 +56,14 @@ class Projects extends React.Component {
         ],
         stack: ["HTML", "CSS"]
        },
+        {
+          name: "CSS Drawings",
+          url: "https://github.com/joshcoles/css-drawing",
+          description: [
+            "A little playground for html and css drawings."
+          ],
+          stack: ["HTML", "CSS"]
+        },
        {
         name: "Social or Nothing",
         url: "http://www.socialornothing.com/",
@@ -88,7 +88,7 @@ class Projects extends React.Component {
         "This was my midterm project at Lighthouse Labs. My team chose to work with the Google Maps API, and we settled on the aptly-named 'Cool Parts of the City'.",
         "Essentially any hypothetical user could create an account and save different maps, each with their own set of markers with "
         ],
-        stack: ["HTML", "CSS"]
+        stack: ["HTML", "CSS", "Node.js", "Express.js", "Bootstrap", "jQuery", "PostgreSQL", "Knex.js", "Git"]
        },
     ]
   }
