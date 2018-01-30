@@ -1,59 +1,10 @@
-@import 'SinglePage';
-
-/* Variables
-   ============================= */
-
-$primary-color: #263546;
-$primary-color-light: #404F60;
-$secondary-color:  #EEB14F;
-$secondary-color-dark: #BB7E1C;
-$white: #FFFFFF;
-
-$twitter: #1da1f2;
-$facebook: #3b5998;
-$instagram: #e1306c;
-$linkedin: #0077b5;
-$github: #4078c0;
-
+@import './scss/variables';
+@import './scss/global';
 
 /* Global Styles & Layout
    ============================= */
 
-
-    html {
-      background-color: $primary-color;
-    }
-
-    a {
-      transition: color 0.2s;
-      &:hover {
-        transition: color 0.2s;
-      }
-    }
-
-    .button {
-      border-width: 3px;
-      border-style: solid;
-      border-radius: 5px;
-      cursor: pointer;
-      padding: 10px 20px;
-      font-family: Montserrat;
-      font-size: 30px;
-      text-decoration: none;
-
-      &.primary-button {
-        border: 3px solid $primary-color;
-        background-color: $primary-color;
-        color: $white;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: all 0.2s;
-        &:hover {
-          border: 3px solid $white;
-          transition: all 0.2s;
-        }
-      }
-    }
+   
 
 /* Nav
    ============================= */
@@ -380,18 +331,30 @@ $github: #4078c0;
 /* Single Page
    ============================= */
 
+  
 .banner-background {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-    .banner-content {
-      padding-bottom: 50px;
-      text-align: right;
-      @media(max-width: 768px){
-        text-align: center;
-      }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  .banner-content {
+    padding-bottom: 50px;
+    text-align: right;
+    @media(max-width: 768px){
+      text-align: center;
     }
+  }
+  &.container-fluid {
+    background-image: url('./images/lake.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    position: relative;
+    @media(max-width: 768px){
+      min-height: 400px;
+    }
+  }
   .banner-title {
     color: $secondary-color;
     font-family: Montserrat, sans-serif;
@@ -501,6 +464,8 @@ $github: #4078c0;
 
 .services {
   background-color: $primary-color-light;
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 50px;
   @media (max-width:1199px){
     flex-wrap: wrap;
@@ -552,6 +517,7 @@ $github: #4078c0;
 }
 
 .about {
+  display: flex;
   padding: 0px;
   @media(max-width: 767px){
     flex-direction: column;
@@ -572,6 +538,9 @@ $github: #4078c0;
   }
   .about-image {
     background-position: center;
+    background-image: url('./images/yung_josh.JPG');
+    min-height: 400px;
+    background-size: cover;
   }
   .about-heading {
     color: $white;
@@ -653,6 +622,21 @@ $github: #4078c0;
 
 
 
+
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  display: flex;
+  .about-image {
+    background-image: url('./images/yung_josh.JPG');
+    min-height: 400px;
+    background-size: cover;
+  }
+}
 
 
 

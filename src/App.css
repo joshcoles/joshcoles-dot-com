@@ -1,29 +1,3 @@
-.banner-background.container-fluid {
-  background-image: url("./images/lake.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 600px;
-  position: relative; }
-  @media (max-width: 768px) {
-    .banner-background.container-fluid {
-      min-height: 400px; } }
-
-.services {
-  display: flex;
-  justify-content: space-around; }
-
-.about {
-  display: flex; }
-  .about .about-image {
-    background-image: url("./images/yung_josh.JPG");
-    min-height: 400px;
-    background-size: cover; }
-
-/* Variables
-   ============================= */
-/* Global Styles & Layout
-   ============================= */
 html {
   background-color: #263546; }
 
@@ -52,6 +26,8 @@ a {
       border: 3px solid #FFFFFF;
       transition: all 0.2s; }
 
+/* Global Styles & Layout
+   ============================= */
 /* Nav
    ============================= */
 .main-menu {
@@ -292,6 +268,16 @@ a {
     @media (max-width: 768px) {
       .banner-background .banner-content {
         text-align: center; } }
+  .banner-background.container-fluid {
+    background-image: url("./images/lake.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    position: relative; }
+    @media (max-width: 768px) {
+      .banner-background.container-fluid {
+        min-height: 400px; } }
   .banner-background .banner-title {
     color: #EEB14F;
     font-family: Montserrat, sans-serif;
@@ -376,6 +362,8 @@ a {
 
 .services {
   background-color: #404F60;
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 50px; }
   @media (max-width: 1199px) {
     .services {
@@ -421,6 +409,7 @@ a {
     filter: brightness(0) invert(1); }
 
 .about {
+  display: flex;
   padding: 0px; }
   @media (max-width: 767px) {
     .about {
@@ -439,7 +428,10 @@ a {
       .about .about-description {
         padding: 40px; } }
   .about .about-image {
-    background-position: center; }
+    background-position: center;
+    background-image: url("./images/yung_josh.JPG");
+    min-height: 400px;
+    background-size: cover; }
   .about .about-heading {
     color: #FFFFFF;
     font-size: 40px;
@@ -494,3 +486,14 @@ a {
     font-size: 24px; }
   .project-outer h3 {
     font-size: 20px; } }
+
+.services {
+  display: flex;
+  justify-content: space-around; }
+
+.about {
+  display: flex; }
+  .about .about-image {
+    background-image: url("./images/yung_josh.JPG");
+    min-height: 400px;
+    background-size: cover; }
