@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Zoom from 'react-reveal/Zoom';
 class Projects extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +27,7 @@ class Projects extends React.Component {
          url: "https://github.com/joshcoles/master-exteriors",
          description: [
          "I'm in the process of building this site for my father's business, 'Master Exteriors'.",
-         "This is a static site built with an Express.js server and styled with SASS. I hope that it can bring in a bit more local business for him, so I'm going to put some work into SEO before it launches."
+         "This is a static site built with an Express.js server and styled with SASS. It's been 'soft launched' but needs some work, especially in terms of copy and SEO."
          ],
          stack: ["Node.js", "Express.js", "SASS", "jQuery"]
        },
@@ -52,7 +52,7 @@ class Projects extends React.Component {
           name: "CSS Drawings",
           url: "https://github.com/joshcoles/css-drawing",
           description: [
-            "A little playground for html and css drawings."
+            "A little playground for html and css drawings. Not much here yet but I enjoy working on this stuff!"
           ],
           stack: ["HTML", "CSS"]
         },
@@ -94,24 +94,24 @@ class Projects extends React.Component {
         {this.state.projects.map((project, index) => {
           return (
             <div className="project-outer col-lg-4 col-sm-12" key={index}>
-            <a href={project.url}>
-              <div className="project-inner">
-              <h2>{project.name}</h2>
-              {project.description.map((paragraph, index) => {
-                return (
-                    <p key={index}>{paragraph}</p>
-                )
-              })}
-              <h3>Tech Stack: </h3>
-              <ul className="tech-stack">
-                {project.stack.map((tech, index) => {
-                  return (
-                    <li key={index}>{tech}</li>
-                  )
-                })}
-              </ul>
-              </div>
-            </a>
+              <a href={project.url}>
+                <div className="project-inner">
+                  <h2>{project.name}</h2>
+                  {project.description.map((paragraph, index) => {
+                    return (
+                      <p key={index}>{paragraph}</p>
+                    )
+                  })}
+                  <h3>Tech Stack: </h3>
+                  <ul className="tech-stack">
+                    {project.stack.map((tech, index) => {
+                      return (
+                        <li key={index}>{tech}</li>
+                     )
+                   })}
+                 </ul>
+                </div>
+              </a>
             </div>
           )
         })}

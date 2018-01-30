@@ -26,174 +26,6 @@ a {
       border: 3px solid #FFFFFF;
       transition: all 0.2s; }
 
-/* Global Styles & Layout
-   ============================= */
-/* Nav
-   ============================= */
-.main-menu {
-  margin-top: 20px;
-  padding-top: 10px;
-  position: absolute;
-  z-index: 2; }
-  .main-menu ul {
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    padding-left: 0px; }
-  .main-menu li {
-    margin-right: 20px; }
-    .main-menu li:last-of-type {
-      margin-right: 50px; }
-  .main-menu a {
-    color: #EEB14F;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
-    .main-menu a:hover {
-      color: #BB7E1C;
-      text-decoration: none;
-      transition: all 0.2s; }
-
-/* Header
-   ============================= */
-.site-header {
-  background-color: #263546;
-  color: #EEB14F;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  text-align: center; }
-  .site-header > .row {
-    display: block; }
-  .site-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize; }
-  .site-header h2 {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 24px; }
-  .site-header .profile-image-container {
-    align-items: center;
-    border-radius: 50%;
-    display: flex;
-    height: 150px;
-    overflow: hidden;
-    justify-content: center;
-    width: 150px;
-    margin: auto; }
-  .site-header .intro-section {
-    align-items: center;
-    color: #FFFFFF;
-    display: flex;
-    text-align: left; }
-    .site-header .intro-section > div {
-      background-color: #404F60;
-      padding: 20px; }
-    .site-header .intro-section a {
-      color: #EEB14F;
-      font-size: 18px; }
-      .site-header .intro-section a:hover {
-        color: #BB7E1C;
-        text-decoration: none; }
-    .site-header .intro-section p {
-      font-size: 18px;
-      margin-bottom: 20px; }
-  .site-header .social-media-row ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-bottom: 0px;
-    padding-left: 0px; }
-  .site-header .social-media-row li {
-    margin-left: 10px;
-    background-color: transparent;
-    border: 2px solid #EEB14F;
-    border-radius: 50%;
-    color: transparent;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border-color 0.2s;
-    cursor: pointer; }
-    .site-header .social-media-row li:first-of-type {
-      margin-left: 0px; }
-    .site-header .social-media-row li:hover {
-      transition: border-color 0.2s;
-      color: white; }
-      .site-header .social-media-row li:hover a {
-        color: #FFFFFF; }
-  .site-header .social-media-row a {
-    color: #FFFFFF; }
-  .site-header .profile-image {
-    height: 200px;
-    border-radius: 30px; }
-  .site-header .twitter:hover {
-    border-color: #1da1f2; }
-  .site-header .facebook:hover {
-    border-color: #3b5998; }
-  .site-header .instagram:hover {
-    border-color: #e1306c; }
-  .site-header .linkedin:hover {
-    border-color: #0077b5; }
-  .site-header .github:hover {
-    border-color: #4078c0; }
-
-/* Blog Post
-   ============================= */
-.homepage-blog {
-  background-color: white;
-  color: #263546;
-  padding-top: 50px;
-  text-align: left; }
-  .homepage-blog .blog-content {
-    margin-bottom: 20px; }
-  .homepage-blog .blog-centered {
-    display: flex;
-    justify-content: center; }
-  .homepage-blog .date-posted {
-    font-size: 16px; }
-  .homepage-blog p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-family: 'Lora', serif; }
-  .homepage-blog a {
-    color: #EEB14F;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.2s; }
-    .homepage-blog a:hover {
-      color: #BB7E1C;
-      transition: color 0.2s; }
-  .homepage-blog h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    margin: 0 0 20px 0; }
-  .homepage-blog li {
-    font-size: 20px;
-    font-family: 'Lora', serif; }
-  .homepage-blog ul {
-    margin-bottom: 20px; }
-
-/* Footer
-   ============================= */
-.site-footer {
-  background-color: #263546;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  .site-footer p {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0; }
-  .site-footer .footer-contact-info {
-    text-align: right; }
-
-/* Projects Page
-   ============================= */
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +66,12 @@ a {
     transition: 0.5s ease;
     white-space: nowrap;
     padding-bottom: 5px; }
+    @media (max-width: 768px) {
+      .project-outer a h2 {
+        font-size: 24px; } }
+  @media (max-width: 768px) {
+    .project-outer a h3 {
+      font-size: 20px; } }
   .project-outer a:hover {
     text-decoration: none; }
     .project-outer a:hover h2 {
@@ -255,8 +93,6 @@ a {
   .project-outer:nth-of-type(odd) a .tech-stack li {
     border: 1px solid #263546; }
 
-/* Single Page
-   ============================= */
 .banner-background {
   display: flex;
   flex-direction: column;
@@ -466,34 +302,3 @@ a {
     font-family: Montserrat;
     font-size: 18px;
     margin-bottom: 30px; }
-
-/* Bootstrap default query sizes */
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-@media (max-width: 768px) {
-  .profile-section {
-    margin-bottom: 50px; }
-  .main-menu {
-    width: 100%; }
-    .main-menu ul {
-      display: flex;
-      justify-content: center; }
-      .main-menu ul li {
-        margin-right: 20px; }
-        .main-menu ul li:last-of-type {
-          margin-right: 0px; }
-  .project-outer h2 {
-    font-size: 24px; }
-  .project-outer h3 {
-    font-size: 20px; } }
-
-.services {
-  display: flex;
-  justify-content: space-around; }
-
-.about {
-  display: flex; }
-  .about .about-image {
-    background-image: url("./images/yung_josh.JPG");
-    min-height: 400px;
-    background-size: cover; }
