@@ -3,18 +3,17 @@ import BannerBackground from './BannerBackground';
 import Description from './Description';
 import Services from './Services';
 import About from './About';
-import Projects from '../Projects';
+import Projects from './Projects';
 import Contact from './Contact';
-import lake from '../../images/lake.jpeg';
 
-class SinglePage extends React.Component {
+class Landing extends React.Component {
 
   render() {
     return (
         <div>
-          <BannerBackground />
+          <BannerBackground social={this.props.info.social}/>
           <Description />
-          <Services />
+          <Services services={this.props.info.services}/>
           <About />
           <Projects />
           <Contact />
@@ -24,4 +23,4 @@ class SinglePage extends React.Component {
 }
 
 
-export default SinglePage;
+export default Landing;

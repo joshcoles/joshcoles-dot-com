@@ -1,18 +1,10 @@
 import React from 'react';
-import showdown from 'showdown';
-
-    let converter = new showdown.Converter();
-    let markdownText = '#hello, markdown!';
-    let html = converter.makeHtml(markdownText);
 
 class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
-    // Every project's description needs to be an array - every new string
-    // in the array is a new paragraph.
-    projects: [
+      projects: [
         {
           name: "joshcoles.com",
           url: "http://joshcoles.com",
@@ -90,9 +82,9 @@ class Projects extends React.Component {
         ],
         stack: ["HTML", "CSS", "Node.js", "Express.js", "Bootstrap", "jQuery", "PostgreSQL", "Knex.js", "Git"]
        },
-    ]
+      ]
+    }
   }
-}
 
   render() {
     return (
@@ -114,7 +106,7 @@ class Projects extends React.Component {
               <ul className="tech-stack">
                 {project.stack.map((tech, index) => {
                   return (
-                    <li key={ index }>{tech}</li>
+                    <li key={index}>{tech}</li>
                   )
                 })}
               </ul>
