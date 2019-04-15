@@ -9,7 +9,7 @@ class App extends React.Component {
     this.state = {
       social: {
         name: 'Josh Coles',
-        position: 'Junior Full-Stack Web Developer',
+        position: 'Web Developer',
         socialMediaInfo: {
           twitter: "http://twitter.com/joshcoles",
           facebook: "http://facebook.com/joshcoles",
@@ -23,22 +23,22 @@ class App extends React.Component {
           title: "Javascript",
           img: "js_icon.png",
           caption: "javascript by Oliviu Stoian from the Noun Project",
-          description: "My first programming language. Vanilla, Node, Express, Knex, jQuery, some React and Angular."
+          description: "My first programming language. ES6/ES7+, Node, Express, jQuery, some React and Vue."
         },  {
           title: "CSS",
           img: "css_icon.png",
           caption: "file css by Chanut is Industries from the Noun Project",
-          description: "Always down to make something responsive. CSS, SCSS, Bootstrap, Material Design."
+          description: "Always down to make something responsive. CSS, SCSS, Bootstrap, Materialize, etc."
         }, {
           title: "CMS",
           img: "cms_icon.png",
           caption: "CMS by Danil Polshin from the Noun Project",
-          description: "90% of the web uses Wordpress (I made that number up). Wordpress and Shopify."
+          description: "90% of the web uses Wordpress (I made that number up). Experience with Wordpress and Shopify."
         }, {
           title: "UI Design",
           img: "ui_icon.png",
           caption: "ui design by Setyo Ari Wibowo from the Noun Project",
-          description: "I mean, kind of. I'm not trained in UI design but I learned it on the streets.."
+          description: "I mean, kind of. I learned it on the streets?"
         }
       ]
     }

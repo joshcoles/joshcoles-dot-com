@@ -9,7 +9,7 @@ const contact = () => {
           <Zoom bottom duration={1000}>
             <h2>Hit me up.</h2>
           </Zoom>
-          <p>I'm currently looking for work as a full-time web developer.</p>
+          <p>I'm always available for a coffee.</p>
           <a className="button primary-button" href="mailto:josh@joshcoles.com">Email me</a>
         </div>
       </div>

@@ -6,30 +6,37 @@ class Projects extends React.Component {
     this.state = {
       projects: [
         {
+          name: "Island Roofing and Siding",
+          url: "https://islandroofingandsidingpei.com/",
+          description: [
+            "My father and brother own a small carpentry business in Prince Edward Island, and put together this static site using a great template by Softnio."
+          ],
+          stack: ["HTML", "SCSS", "Firebase", "jQuery", "Basin"]
+        },
+        {
+          name: "Widerfunnel",
+          url: "https://www.widerfunnel.com/case-studies/",
+          description: [
+            "In my current role at WiderFunnel I am fortunate enough to get to work on some extremely recognizeable brands. Here are some case studies featuring our work with companies like Sport Chek, Envoy and The Motley Fool."
+          ],
+          stack: ["Optimizely", "Visual Website Organizer", "Google Optimize", "jQuery", "HTML", "SCSS", "Webpack"]
+        },
+        {
           name: "joshcoles.com",
           url: "http://joshcoles.com",
           description: [
             "Very meta - you're here right now. This is my own, personal web playground where I can get some experience building in React.js. It's also, conveniently, a place to show off some of my other work.",
-            "Note that I kind of just started this one day without much planning ahead, which I know is bad practice. My goal is to continue to refactor this in my spare time and continue to improve it as I add features."
+            "Like all side projects, this is a work in progress"
           ],
-          stack: ["React.js", "Node.js", "Firebase", "Bootstrap", "HTML", "SASS", "Create React App"]
+          stack: ["React.js", "Node.js", "Firebase", "Bootstrap", "HTML", "SCSS", "Create React App"]
         },
         {
          name: "Vancouver Ipsum",
          url: "http://vancouveripsum.com",
          description: [
-          "This a very simple ipsum generator that I built in Angular 4. I started very simple, but hope to add more features as I develop my skills through a course that I'm taking."
+          "This a very simple ipsum generator that I built in Angular 4. Fun and simple to use."
           ],
          stack: ["Angular 4", "CSS", "Firebase", "Bootstrap" ]
-       },
-       {
-         name: "masterexteriors.ca",
-         url: "https://github.com/joshcoles/master-exteriors",
-         description: [
-         "I'm in the process of building this site for my father's business, 'Master Exteriors'.",
-         "This is a static site built with an Express.js server and styled with SASS. It's been 'soft launched' but needs some work, especially in terms of copy and SEO."
-         ],
-         stack: ["Node.js", "Express.js", "SASS", "jQuery"]
        },
        {
          name: "Github Battle",
@@ -56,14 +63,6 @@ class Projects extends React.Component {
           ],
           stack: ["HTML", "CSS"]
         },
-       {
-        name: "Social or Nothing",
-        url: "http://www.socialornothing.com/",
-        description: [
-        "I chose this to showcase some of the work I did at Pivot & Pilot. I mostly contributed to the styling of this site, including some fun jQuery animations."
-        ],
-        stack: ["PHP", "Wordpress", "jQuery", "HTML", "SASS"]
-       },
        {
         name: "Money on the Board",
         url: "https://github.com/joshcoles/money-on-the-board",

@@ -62,9 +62,8 @@ a {
   .project-outer a h2 {
     display: inline-block;
     border-bottom: 3px solid transparent;
-    width: 0px;
+    width: 100%;
     transition: 0.5s ease;
-    white-space: nowrap;
     padding-bottom: 5px; }
     @media (max-width: 768px) {
       .project-outer a h2 {
