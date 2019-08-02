@@ -6,6 +6,14 @@ class Projects extends React.Component {
     this.state = {
       projects: [
         {
+          name: "Order Up",
+          url: "https://github.com/joshcoles/order-up",
+          description: [
+            "This was originally built for a job application, and relied on an external API. I then polished up this simple order-tracking app and replaced their API with my own, which I built using express."
+          ],
+          stack: ["React.js", "SCSS", "Node.js", "Axios", "Express"]
+        },        
+        {
           name: "Island Roofing and Siding",
           url: "https://islandroofingandsidingpei.com/",
           description: [
@@ -37,8 +45,8 @@ class Projects extends React.Component {
           "This a very simple ipsum generator that I built in Angular 4. Fun and simple to use."
           ],
          stack: ["Angular 4", "CSS", "Firebase", "Bootstrap" ]
-       },
-       {
+        },
+        {
          name: "Github Battle",
          url: "https://github-battle.joshcoles.com/",
          description: [
@@ -46,15 +54,7 @@ class Projects extends React.Component {
          "I hosted it at the end of the tutorial and figured I might as well include it."
          ],
          stack: ["Node.js", "Express.js", "AJAX", "Bootstrap", "jQuery", "PostgreSQL"]
-       },
-       {
-        name: "Responsive Page",
-        url: "https://adhesive-paperback.glitch.me/",
-        description: [
-        "This is just a little responsive page I built as part of a job application a few months ago."
-        ],
-        stack: ["HTML", "CSS"]
-       },
+        },
         {
           name: "CSS Drawings",
           url: "https://github.com/joshcoles/css-drawing",

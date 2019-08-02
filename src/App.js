@@ -30,10 +30,10 @@ class App extends React.Component {
           caption: "file css by Chanut is Industries from the Noun Project",
           description: "Always down to make something responsive. CSS, SCSS, Bootstrap, Materialize, etc."
         }, {
-          title: "CMS",
+          title: "A/B Testing",
           img: "cms_icon.png",
           caption: "CMS by Danil Polshin from the Noun Project",
-          description: "90% of the web uses Wordpress (I made that number up). Experience with Wordpress and Shopify."
+          description: "I've built dozens of front-end experiments using tools like Optimizely and Google Optimize."
         }, {
           title: "UI Design",
           img: "ui_icon.png",
