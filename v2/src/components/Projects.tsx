@@ -6,6 +6,12 @@ class Projects extends React.Component {
     this.state = {
       projects: [
         {
+          name: "Conductor",
+          url: "https://www.senseilabs.com/conductor/",
+          description: ["Conductor is the SaaS product that I worked on for over 4.5 years starting in 2020. While I can't go into details about its tech stack, I can say that Conductor is a complex product designed to streamline enterprise-grade transformations, project and portfolio management."],
+          stack: [],
+        },
+        {
           name: "Order Up",
           url: "https://github.com/joshcoles/order-up",
           description: [
@@ -15,17 +21,17 @@ class Projects extends React.Component {
         },        
         {
           name: "Island Roofing and Siding",
-          url: "https://islandroofingandsidingpei.com/",
+          url: "https://github.com/joshcoles/master-exteriors?tab=readme-ov-file",
           description: [
             "My father and brother own a small carpentry business in Prince Edward Island, and put together this static site using a great template by Softnio."
           ],
           stack: ["HTML", "SCSS", "Firebase", "jQuery", "Basin"]
         },
         {
-          name: "Widerfunnel",
-          url: "https://www.widerfunnel.com/case-studies/",
+          name: "Widerfunnel (now Conversion)",
+          url: "https://conversion.com/case-studies/",
           description: [
-            "In my current role at WiderFunnel I am fortunate enough to get to work on some extremely recognizeable brands. Here are some case studies featuring our work with companies like Sport Chek, Envoy and The Motley Fool."
+            "In my previous role at WiderFunnel (now Conversion) I was fortunate enough to get to work on some extremely recognizeable brands. Here are some case studies featuring our work with companies like Sport Chek, Envoy and The Motley Fool."
           ],
           stack: ["Optimizely", "Visual Website Organizer", "Google Optimize", "jQuery", "HTML", "SCSS", "Webpack"]
         },
@@ -42,7 +48,7 @@ class Projects extends React.Component {
          name: "Vancouver Ipsum",
          url: "http://vancouveripsum.com",
          description: [
-          "This a very simple ipsum generator that I built in Angular 4. Fun and simple to use."
+          "This a very simple ipsum generator that I built while learning Angular 4. Fun and simple to use."
           ],
          stack: ["Angular 4", "CSS", "Firebase", "Bootstrap" ]
         },
@@ -54,14 +60,6 @@ class Projects extends React.Component {
          "I hosted it at the end of the tutorial and figured I might as well include it."
          ],
          stack: ["Node.js", "Express.js", "AJAX", "Bootstrap", "jQuery", "PostgreSQL"]
-        },
-        {
-          name: "CSS Drawings",
-          url: "https://github.com/joshcoles/css-drawing",
-          description: [
-            "A little playground for html and css drawings. Not much here yet but I enjoy working on this stuff!"
-          ],
-          stack: ["HTML", "CSS"]
         },
        {
         name: "Money on the Board",
@@ -101,14 +99,20 @@ class Projects extends React.Component {
                       <p key={index}>{paragraph}</p>
                     )
                   })}
-                  <h3>Tech Stack: </h3>
-                  <ul className="tech-stack">
-                    {project.stack.map((tech, index) => {
-                      return (
-                        <li key={index}>{tech}</li>
-                     )
-                   })}
-                 </ul>
+                  {
+                    project.stack.length > 0 && (
+                      <>
+                        <h3>Tech Stack: </h3>
+                        <ul className="tech-stack">
+                          {project.stack.map((tech, index) => {
+                            return (
+                              <li key={index}>{tech}</li>
+                          )
+                        })}
+                      </ul>   
+                      </>
+                    )
+                  }
                 </div>
               </a>
             </div>
