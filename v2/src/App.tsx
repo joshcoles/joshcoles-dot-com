@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Landing from './components/landing';
 import './App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [data] = useState({
