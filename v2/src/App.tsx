@@ -1,43 +1,25 @@
-import { useState } from 'react';
-import Landing from './components/landing';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
+import BannerBackground from './components/BannerBackground';
+import Description from './components/Description';
+import Services from './components/Services';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import staticData from './data.json';
 
 function App() {
-  const [data] = useState({
-    social: {
-      name: 'Josh Coles',
-      position: 'Software Developer',
-      socialMediaInfo: {
-        twitter: "http://twitter.com/joshcoles",
-        facebook: "http://facebook.com/joshcoles",
-        instagram: "http://instagram.com/joshkcoles",
-        linkedin: "http://linkedin.com/in/joshcoles",
-        github: "http://github.com/joshcoles",
-      }
-    },
-    services: [
-      {
-        title: "Web Development",
-        img: "website_icon.png",
-        description: "Experienced in building responsive, user-friendly websites using a variety of modern JavaScript frameworks."
-      },  
-      {
-        title: "Software Development",
-        img: "software_icon.png",
-        description: "Skilled in creating scalable software solutions to solve complex problems, with a strong emphasis on teamwork and collaboration."
-      }, 
-      {
-        title: "A/B Testing",
-        img: "ab_icon.png",
-        description: "Proficient in building front-end experiments using tools like Optimizely and Google Optimize."
-      },
-    ]
-  });
+  const [data] = useState({...staticData});
 
   return (
     <>
-      <Landing info={data} />
+      <BannerBackground bannerInfo={data.social}/>
+      <Description />
+      <Services services={data.services}/>
+      <About />
+      <Projects projects={data.projects} />
+      <Contact />
     </>
   )
 }

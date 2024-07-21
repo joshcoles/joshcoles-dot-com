@@ -1,0 +1,111 @@
+{
+    "social": {
+      "name": "Josh Coles",
+      "position": "Software Developer",
+      "socialMediaInfo": {
+        "twitter": "http://twitter.com/joshcoles",
+        "facebook": "http://facebook.com/joshcoles",
+        "instagram": "http://instagram.com/joshkcoles",
+        "linkedin": "http://linkedin.com/in/joshcoles",
+        "github": "http://github.com/joshcoles"
+      }
+    },
+    "services": [
+      {
+        "title": "Web Development",
+        "img": "website_icon.png",
+        "description": "Experienced in building responsive, user-friendly websites using a variety of modern JavaScript frameworks."
+      },
+      {
+        "title": "Software Development",
+        "img": "software_icon.png",
+        "description": "Skilled in creating scalable software solutions to solve complex problems, with a strong emphasis on teamwork and collaboration."
+      },
+      {
+        "title": "A/B Testing",
+        "img": "ab_icon.png",
+        "description": "Proficient in building front-end experiments using tools like Optimizely and Google Optimize."
+      }
+    ],
+    "projects": [
+        {
+          "name": "Conductor",
+          "url": "https://www.senseilabs.com/conductor/",
+          "description": [
+            "Conductor is the SaaS product that I worked on for over 4.5 years beginning in 2020. While I can't go into details about its tech stack, I can say that Conductor is a complex product designed to streamline enterprise-grade transformations, project and portfolio management."
+          ],
+          "stack": []
+        },
+        {
+          "name": "Order Up",
+          "url": "https://github.com/joshcoles/order-up",
+          "description": [
+            "This was originally built for a job application, and relied on an external API. I then polished up this simple order-tracking app and replaced their API with my own, which I built using express."
+          ],
+          "stack": ["React.js", "SCSS", "Node.js", "Axios", "Express"]
+        },
+        {
+          "name": "Island Roofing and Siding",
+          "url": "https://github.com/joshcoles/master-exteriors?tab=readme-ov-file",
+          "description": [
+            "My father and brother own a small carpentry business in Prince Edward Island, and put together this static site using a great template by Softnio."
+          ],
+          "stack": ["HTML", "SCSS", "Firebase", "jQuery", "Basin"]
+        },
+        {
+          "name": "Widerfunnel (now Conversion)",
+          "url": "https://conversion.com/case-studies/",
+          "description": [
+            "In my previous role at WiderFunnel (now Conversion) I was fortunate enough to get to work on some extremely recognizable brands. Here are some case studies featuring our work with companies like Sport Chek, Envoy and The Motley Fool."
+          ],
+          "stack": ["Optimizely", "Visual Website Organizer", "Google Optimize", "jQuery", "HTML", "SCSS", "Webpack"]
+        },
+        {
+          "name": "joshcoles.com",
+          "url": "http://joshcoles.com",
+          "description": [
+            "Very meta - you're here right now. This is my own, personal web playground where I can get some experience building in React.js. It's also, conveniently, a place to show off some of my other work.",
+            "Like all side projects, this is a work in progress."
+          ],
+          "stack": ["React.js", "Node.js", "Firebase", "Bootstrap", "HTML", "SCSS", "Create React App"]
+        },
+        {
+          "name": "Vancouver Ipsum",
+          "url": "http://vancouveripsum.com",
+          "description": [
+            "This is a very simple ipsum generator that I built while learning Angular 4. Fun and simple to use."
+          ],
+          "stack": ["Angular 4", "CSS", "Firebase", "Bootstrap"]
+        },
+        {
+          "name": "Github Battle",
+          "url": "https://github-battle.joshcoles.com/",
+          "description": [
+            "This was 100% built following Tyler Davies' amazing react fundamentals course at reacttraining.com.",
+            "I hosted it at the end of the tutorial and figured I might as well include it."
+          ],
+          "stack": ["Node.js", "Express.js", "AJAX", "Bootstrap", "jQuery", "PostgreSQL"]
+        },
+        {
+          "name": "Money on the Board",
+          "url": "https://github.com/joshcoles/money-on-the-board",
+          "description": [
+            "Money on the Board was my final project at Lighthouse Labs. Users could use it to make pledges to charities based on the occurrence of in-game hockey events like goals or hits.",
+            "The application was built for a live demo using faked data from a sports statistics API. It lives on in memory only."
+          ],
+          "stack": [
+            "Express.js", "Node.js", "PostgreSQL", "Knex.js", "React.js", "HTML", "SASS", "Materialize CSS", "Git", "jQuery", "Socket.io"
+          ]
+        },
+        {
+          "name": "Cool Parts of the City",
+          "url": "https://github.com/joshcoles/Cool-Parts-of-the-City",
+          "description": [
+            "This was my midterm project at Lighthouse Labs. My team chose to work with the Google Maps API, and we settled on the aptly-named 'Cool Parts of the City'.",
+            "Essentially any hypothetical user could create an account and save different maps, each with their own set of markers."
+          ],
+          "stack": ["HTML", "CSS", "Node.js", "Express.js", "Bootstrap", "jQuery", "PostgreSQL", "Knex.js", "Git"]
+        }
+      ]      
+  }
+  

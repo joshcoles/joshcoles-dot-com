@@ -1,16 +1,14 @@
+import React from 'react';
 import Service from './Service';
+import { ServicesProps } from '../types';
 
-const services = (props) => {
-  
-  const serviceList = props.services.map((service, index) => {
-    return <Service key={index} serviceInfo={service}></Service>
-  })
-
-  return (
-    <div className="services container-fluid">
-      {serviceList}
-    </div>
-  )
-}
-
+const services: React.FC<ServicesProps> = ({ services }) => (
+  <div className="services container-fluid">
+    {
+      services.map((service, index) => (
+        <Service key={index + 10} serviceInfo={service}></Service>
+      ))
+    }
+  </div>
+);
 export default services;
