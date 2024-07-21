@@ -1,5 +1,4 @@
 import React from 'react';
-// import Zoom from 'react-reveal/Zoom';
 class Projects extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +7,7 @@ class Projects extends React.Component {
         {
           name: "Conductor",
           url: "https://www.senseilabs.com/conductor/",
-          description: ["Conductor is the SaaS product that I worked on for over 4.5 years starting in 2020. While I can't go into details about its tech stack, I can say that Conductor is a complex product designed to streamline enterprise-grade transformations, project and portfolio management."],
+          description: ["Conductor is the SaaS product that I worked on for over 4.5 years beginning in 2020. While I can't go into details about its tech stack, I can say that Conductor is a complex product designed to streamline enterprise-grade transformations, project and portfolio management."],
           stack: [],
         },
         {

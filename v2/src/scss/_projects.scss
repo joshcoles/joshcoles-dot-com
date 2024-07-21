@@ -73,12 +73,14 @@
           background-color: $primary-color;
           color: $white;
         }
-        h2 {
-          border-bottom: 3px solid $white;
-        }
         .tech-stack {
           li {
             border: 1px solid $white;
+          }
+        }
+        &:hover {
+          h2 {
+            border-bottom: 3px solid $white;
           }
         }
       }

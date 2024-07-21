@@ -7,7 +7,7 @@ function App() {
   const [data] = useState({
     social: {
       name: 'Josh Coles',
-      position: 'Web Developer',
+      position: 'Software Developer',
       socialMediaInfo: {
         twitter: "http://twitter.com/joshcoles",
         facebook: "http://facebook.com/joshcoles",
@@ -29,7 +29,7 @@ function App() {
       }, 
       {
         title: "A/B Testing",
-        img: "cms_icon.png",
+        img: "ab_icon.png",
         description: "Proficient in building front-end experiments using tools like Optimizely and Google Optimize."
       },
     ]
