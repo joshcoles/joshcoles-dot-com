@@ -10,18 +10,18 @@ import Contact from './components/Contact';
 import staticData from './data.json';
 
 function App() {
-  const [data] = useState({...staticData});
+	const [data] = useState({ ...staticData });
 
-  return (
-    <>
-      <BannerBackground bannerInfo={data.social}/>
-      <Description />
-      <Services services={data.services}/>
-      <About />
-      <Projects projects={data.projects} />
-      <Contact />
-    </>
-  )
+	return (
+		<>
+			<BannerBackground bannerInfo={data.social} />
+			<Description />
+			<Services services={data.services} />
+			<About />
+			<Projects projects={data.projects} />
+			<Contact />
+		</>
+	);
 }
 
 export default App;

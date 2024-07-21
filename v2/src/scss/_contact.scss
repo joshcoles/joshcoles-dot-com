@@ -1,25 +1,25 @@
 .contact {
-  align-items: center;
-  background-color: $primary-color-light;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 300px;
-  text-align: center;
-  padding-bottom: 30px;
-  .row {
-    justify-content: center;
-    width: 100%;
-  }
-  h2 {
-    color: $secondary-color;
-    font-family: Montserrat;
-    font-size: 60px;
-  }
-  p {
-    color: $white;
-    font-family: Montserrat;
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
+	align-items: center;
+	background-color: $primary-color-light;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 300px;
+	text-align: center;
+	padding-bottom: 30px;
+	.row {
+		justify-content: center;
+		width: 100%;
+	}
+	h2 {
+		color: $secondary-color;
+		font-family: Montserrat;
+		font-size: 60px;
+	}
+	p {
+		color: $white;
+		font-family: Montserrat;
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
 }

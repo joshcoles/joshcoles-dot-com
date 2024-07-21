@@ -1,44 +1,44 @@
 .container-fluid.about {
-  display: flex;
-  padding: 0px;
-  @media(max-width: 575px){
-    flex-direction: column;
-  }
-  .about-description {
-    background-color: $secondary-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 70px;
-    @media(max-width: 767px){
-      padding: 20px;
-      text-align: center;
-    }
-    @media(max-width: 992px){
-      padding: 40px;
-    }
-  }
-  .about-image {
-    background-position: center;
-    background-image: url('./images/yung_josh.JPG');
-    min-height: 400px;
-    background-size: cover;
-  }
-  .about-heading {
-    color: $white;
-    font-size: 40px;
-    font-family: Montserrat, sans-serif;
-  }
-  .about-content {
-    font-family: Montserrat;
-    color: $primary-color;
-    font-size: 15px;
-    a {
-      color: $white;
-      text-decoration: none;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
+	display: flex;
+	padding: 0px;
+	@media (max-width: 575px) {
+		flex-direction: column;
+	}
+	.about-description {
+		background-color: $secondary-color;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 70px;
+		@media (max-width: 767px) {
+			padding: 20px;
+			text-align: center;
+		}
+		@media (max-width: 992px) {
+			padding: 40px;
+		}
+	}
+	.about-image {
+		background-position: center;
+		background-image: url('./images/yung_josh.JPG');
+		min-height: 400px;
+		background-size: cover;
+	}
+	.about-heading {
+		color: $white;
+		font-size: 40px;
+		font-family: Montserrat, sans-serif;
+	}
+	.about-content {
+		font-family: Montserrat;
+		color: $primary-color;
+		font-size: 15px;
+		a {
+			color: $white;
+			text-decoration: none;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
 }

@@ -1,107 +1,107 @@
 .banner-background {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  .banner-content {
-    padding-bottom: 50px;
-    text-align: right;
-    @media(max-width: 768px){
-      text-align: center;
-    }
-  }
-  &.container-fluid {
-    background-image: url('./images/lake.jpeg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 600px;
-    position: relative;
-    @media(max-width: 768px){
-      min-height: 400px;
-    }
-  }
-  .banner-title {
-    color: $secondary-color;
-    font-family: Montserrat, sans-serif;
-    font-size: 70px;
-  }
-  .banner-description {
-    color: $white;
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-  }
-  .social-media-row {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      list-style: none;
-      margin-bottom: 0px;
-      padding-left: 0px;
-    }
-    li {
-      margin-left: 10px;
-      background-color: transparent;
-      border: 2px solid $secondary-color;
-      border-radius: 50%;
-      color: transparent;
-      height: 30px;
-      width: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: border-color 0.2s;
-      cursor: pointer;
-      &:first-of-type {
-        margin-left: 0px;
-      }
-      &:hover {
-        transition: border-color 0.2s;
-        color: white;
-        a {
-          color: $white;
-        }
-      }
-    }
-    a {
-      color: $white;
-    }
-    @media(max-width: 768px){
-      position: absolute;
-      right: auto;
-      width: 300px;
-      left: calc(50% - 150px);
-      li {
-        border-width: 3px;
-        height: 50px;
-        width: 50px;
-      }
-      i {
-        font-size: 26px;
-      }
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	.banner-content {
+		padding-bottom: 50px;
+		text-align: right;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+	&.container-fluid {
+		background-image: url('./images/lake.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		min-height: 600px;
+		position: relative;
+		@media (max-width: 768px) {
+			min-height: 400px;
+		}
+	}
+	.banner-title {
+		color: $secondary-color;
+		font-family: Montserrat, sans-serif;
+		font-size: 70px;
+	}
+	.banner-description {
+		color: $white;
+		font-family: Montserrat, sans-serif;
+		font-size: 20px;
+	}
+	.social-media-row {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			list-style: none;
+			margin-bottom: 0px;
+			padding-left: 0px;
+		}
+		li {
+			margin-left: 10px;
+			background-color: transparent;
+			border: 2px solid $secondary-color;
+			border-radius: 50%;
+			color: transparent;
+			height: 30px;
+			width: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: border-color 0.2s;
+			cursor: pointer;
+			&:first-of-type {
+				margin-left: 0px;
+			}
+			&:hover {
+				transition: border-color 0.2s;
+				color: white;
+				a {
+					color: $white;
+				}
+			}
+		}
+		a {
+			color: $white;
+		}
+		@media (max-width: 768px) {
+			position: absolute;
+			right: auto;
+			width: 300px;
+			left: calc(50% - 150px);
+			li {
+				border-width: 3px;
+				height: 50px;
+				width: 50px;
+			}
+			i {
+				font-size: 26px;
+			}
+		}
+	}
 
-  .twitter:hover {
-    border-color: $twitter;
-  }
+	.twitter:hover {
+		border-color: $twitter;
+	}
 
-  .facebook:hover {
-    border-color: $facebook;
-  }
+	.facebook:hover {
+		border-color: $facebook;
+	}
 
-  .instagram:hover {
-    border-color: $instagram;
-  }
+	.instagram:hover {
+		border-color: $instagram;
+	}
 
-  .linkedin:hover {
-    border-color: $linkedin;
-  }
+	.linkedin:hover {
+		border-color: $linkedin;
+	}
 
-  .github:hover {
-    border-color: $github;
-  }
+	.github:hover {
+		border-color: $github;
+	}
 }

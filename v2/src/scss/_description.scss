@@ -1,22 +1,22 @@
 .description {
-  background-color: $primary-color;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 70px;
-  @media (max-width:1199px){
-    min-height: 250px;
-    padding-bottom: 30px;
-  }
-  .description-content {
-    color: $white;
-    font-weight: 200;
-    font-size: 24px;
-    text-align: center;
-  }
-  .emphasized {
-    color: $secondary-color;
-    font-family: Montserrat, sans-serif;
-  }
+	background-color: $primary-color;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 70px;
+	@media (max-width: 1199px) {
+		min-height: 250px;
+		padding-bottom: 30px;
+	}
+	.description-content {
+		color: $white;
+		font-weight: 200;
+		font-size: 24px;
+		text-align: center;
+	}
+	.emphasized {
+		color: $secondary-color;
+		font-family: Montserrat, sans-serif;
+	}
 }

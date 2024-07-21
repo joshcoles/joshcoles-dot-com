@@ -1,54 +1,54 @@
 .services {
-  background-color: $primary-color-light;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  @media (max-width:1199px){
-    flex-wrap: wrap;
-  }
-  .service {
-    align-items: center;
-    background-color: $primary-color-light;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
-    margin-top: -75px;
-    padding: 40px 20px 0 20px;
-    text-align: center;
-    width: 300px;
-    @media (max-width: 1199px){
-      margin-top: 50px;
-      width: 50%;
-    }
-    @media (max-width: 599px){
-      margin-top: 0;
-      width: 100%;
-    }
-  }
-  .service-name {
-    color: $secondary-color;
-    margin: 10px 0 20px 0;
-    position: relative;
-    white-space: nowrap;
-    &:after {
-      color: #EEB14F;
-      position: absolute;
-      content: "";
-      width: 20px;
-      height: 2px;
-      z-index: 2;
-      background-color: #eeb14f;
-      bottom: -10px;
-      left: calc(50% - 10px);
-    }
-  }
-  .service-description {
-    color: $white;
-    font-size: 16px;
-  }
-  img {
-    filter: brightness(0) invert(1);
-  }
+	background-color: $primary-color-light;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 50px;
+	@media (max-width: 1199px) {
+		flex-wrap: wrap;
+	}
+	.service {
+		align-items: center;
+		background-color: $primary-color-light;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 300px;
+		margin-top: -75px;
+		padding: 40px 20px 0 20px;
+		text-align: center;
+		width: 300px;
+		@media (max-width: 1199px) {
+			margin-top: 50px;
+			width: 50%;
+		}
+		@media (max-width: 599px) {
+			margin-top: 0;
+			width: 100%;
+		}
+	}
+	.service-name {
+		color: $secondary-color;
+		margin: 10px 0 20px 0;
+		position: relative;
+		white-space: nowrap;
+		&:after {
+			color: #eeb14f;
+			position: absolute;
+			content: '';
+			width: 20px;
+			height: 2px;
+			z-index: 2;
+			background-color: #eeb14f;
+			bottom: -10px;
+			left: calc(50% - 10px);
+		}
+	}
+	.service-description {
+		color: $white;
+		font-size: 16px;
+	}
+	img {
+		filter: brightness(0) invert(1);
+	}
 }
